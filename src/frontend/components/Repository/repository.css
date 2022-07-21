@@ -1,0 +1,36 @@
+.repo-img-lg{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+.repo-category{
+    width: 200px;
+}
+.repo-details{
+    width:30rem;
+}
+.topic{
+    background-color: var(--lightgrey-color);
+    color: var(--blue-color);
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.application{
+    font-weight: 200;
+}
+.align-start{
+    align-items: flex-start;
+}
+.small-text{
+    font-size: x-small;
+}
+.plan-btn{
+    background-color: var(--green-color);
+    color:var(--white-color);
+    border:none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}

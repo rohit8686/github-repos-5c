@@ -1,0 +1,5 @@
+.navbar{
+    background-color: var(--green-color);
+    color: var(--white-color);
+    padding: 1rem;
+}

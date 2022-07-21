@@ -1,0 +1,16 @@
+.repo-img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.repos{
+    width: 80%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--lightgrey-color);
+}
+.repo{
+    width: 320px;
+    padding: 0.5rem;
+    cursor: pointer;
+}

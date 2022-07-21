@@ -1,7 +1,6 @@
 import axios from "axios";
 
 export const getFollowersData = async (login) => {
-  console.log(login);
   try {
     const response = await axios.get(
       `https://api.github.com/users/${login}/followers`

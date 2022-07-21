@@ -6,8 +6,9 @@ import "./userdata.css";
 export const UserData = () => {
   const {
     repoState: {
-      userData: { name, followers, following, errorMsg, avatar_url },
+      userData: { name, followers, following, avatar_url },
       repoData,
+      errorMsg,
     },
   } = useRepo();
 

@@ -1,0 +1,10 @@
+.follower{
+    background-color: var(--lightgrey-color);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.text-center{
+    text-align: center;
+}

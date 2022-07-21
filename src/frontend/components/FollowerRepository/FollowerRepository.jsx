@@ -1,14 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useRepo } from "../../contexts/repo-context";
-import "./repository.css";
+import { useFollowers } from "../../contexts/followers-context";
 
-export const Repository = () => {
+export const FollowerRepository = () => {
   const {
-    repoState: { repoData },
-  } = useRepo();
+    followersState: { followerRepos },
+  } = useFollowers();
   const { repoName } = useParams();
-  const singleRepoData = repoData.find(({ name }) => name === repoName);
+  const singleRepoData = followerRepos.find(({ name }) => name === repoName);
 
   const {
     name,

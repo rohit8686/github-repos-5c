@@ -13,11 +13,12 @@ export const Search = () => {
     const repoData = await getRepoData(search);
     const userData = await getUserData(search);
 
-    if (repoData === "User not found") {
-      repoDispatch({ type: "DATA_NOT_FOUND", payload: repoData });
+    if (repoData === "User not found" || userData === "User not found") {
+      repoDispatch({ type: "DATA_NOT_FOUND", payload: repoData || userData });
     } else {
       repoDispatch({ type: "CLEAR_ERROR" });
       repoDispatch({ type: "REPO_DATA", payload: repoData });
+      repoDispatch({ type: "USER_DATA", payload: userData });
     }
   };
 

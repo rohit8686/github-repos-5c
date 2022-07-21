@@ -33,6 +33,10 @@ body{
     justify-content: flex-start;
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
 .align-start {
     align-content: flex-start;
 }

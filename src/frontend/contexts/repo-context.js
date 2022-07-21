@@ -17,10 +17,14 @@ export const RepoProvider = ({ children }) => {
         return { ...state, search: action.payload };
       case "REPO_DATA":
         return { ...state, repoData: action.payload };
+      case "USER_DATA":
+        return { ...state, userData: action.payload };
       case "DATA_NOT_FOUND":
         return { ...state, errorMsg: action.payload };
       case "CLEAR_ERROR":
         return { ...state, errorMsg: "" };
+      default:
+        return { ...state };
     }
   };
 
